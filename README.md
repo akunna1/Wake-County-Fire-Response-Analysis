@@ -7,7 +7,18 @@ Analyze Wake County Fire Department data to understand **response times**, **sta
 ## Data
 
 * **File:** `Fire_Incidents.csv`
-* Includes incident location, type, dispatch/arrival/cleared times, and responding station.
+* **Columns include:**
+  `X`, `Y`, `OBJECTID`, `incident_number`, `incident_type`, `incident_type_description`, `arrive_date_time`, `cleared_date_time`, `dispatch_date_time`, `exposure`, `platoon`, `station`, `address`, `address2`, `apt_room`, `GlobalID`, `CreationDate`, `Creator`, `EditDate`, `Editor`
+
+### Sample rows:
+
+```
+X          Y          OBJECTID incident_number incident_type incident_type_description arrive_date_time          cleared_date_time         dispatch_date_time      exposure platoon station address
+-78.62660452 35.87021286 474765 07-0031665 NULL 2007/11/15 11:17:00+00 2007/11/15 11:25:00+00 2007/11/15 11:10:00+00 0       6647 LAKE HILL DR RALEIGH, NC 27601
+-78.69364226 35.79289581 474766 08-0017918 NULL 2008/06/29 06:20:00+00 2008/06/29 06:42:00+00 2008/06/29 06:17:00+00 0       539 METHOD RD RALEIGH, NC 27606
+-78.6277871  35.81217058 474767 08-0032426 NULL 2008/11/18 04:19:00+00 2008/11/18 04:24:00+00 2008/11/18 04:12:00+00 0       2100 RUARK CT RALEIGH, NC 27601
+-78.59542157 35.76121328 474768 07-0023051 444 Power line down 2007/08/21 22:52:00+00 2007/08/21 22:58:00+00 2007/08/21 22:47:00+00 0 A 12 1216 BEVERLY DR RALEIGH, NC 27601
+```
 
 ## Tools & Libraries
 
